@@ -15,8 +15,8 @@
  */
 
 provider "google" {
-  project = "sharp-voyage-345407"
-  region  = "us-east1"
+  project = var.project_id
+  region  = var.region
 }
 
 terraform {
@@ -24,6 +24,7 @@ terraform {
     bucket = "gather-plan-tfstate"
     prefix = "terraform-network"
   }
+  required_version = ">= 1.0"
   required_providers {
     google = {
       source  = "hashicorp/google"
