@@ -21,6 +21,11 @@ variable "vpc_name" {
   type        = string
 }
 
+variable "subnet_name" {
+  default     = "subnet1"
+  type        = string
+}
+
 variable "gke_cluster_name" {
   default     = "gather-plan-cluster"
   type        = string

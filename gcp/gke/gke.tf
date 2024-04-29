@@ -6,7 +6,7 @@ module "cluster" {
   name              = var.gke_cluster_name
   network           = var.vpc_name
   project_id        = var.project_id
-  subnetwork        = "default"
+  subnetwork        = var.subnet_name
   region            = var.region
   zones             = var.zone
   regional          = false
