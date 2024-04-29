@@ -21,12 +21,12 @@ variable "project_id" {
 
 variable "name" {
   description = "DNS zone name."
-  default     = "gatherplan-shop"
+  default     = "gatherplan-site"
 }
 
 variable "domain" {
   description = "Zone domain."
-  default     = "gatherplan.shop."
+  default     = "gatherplan.site."
 }
 
 variable "network_self_links" {

@@ -22,14 +22,14 @@ module "dns-public-zone" {
   domain                             = var.domain
   labels                             = var.labels
   enable_logging = false
-  recordsets = [
-    {
-      name = "*"
-      type = "A"
-      ttl  = 300
-      records = [
-        "-",
-      ]
-    },
-  ]
+#  recordsets = [
+#    {
+#      name = "*"
+#      type = "A"
+#      ttl  = 300
+#      records = [
+#        "-",
+#      ]
+#    },
+#  ]
 }
