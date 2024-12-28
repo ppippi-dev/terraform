@@ -12,17 +12,19 @@ module "cluster" {
   regional          = false
   remove_default_node_pool = true
   monitoring_enable_managed_prometheus = false
-  
+
   node_pools = [
     {
-      name               = "pool-1"
+      name               = "general"
       machine_type       = "e2-standard-2"
-      min_count         = 1
-      max_count         = 1
-      disk_size_gb      = 10
-      spot              = true
-      auto_repair       = true
-      auto_upgrade      = true
-    },
+      image_type         = "COS_CONTAINERD"
+      disk_type          = "pd-standard"
+      disk_size_gb       = 10
+      min_count          = 0
+      max_count          = 1
+      spot               = true
+      auto_repair        = true
+      auto_upgrade       = true
+    }
   ]
 }
