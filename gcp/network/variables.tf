@@ -6,11 +6,11 @@ variable "project_id" {
 
 variable "region" {
   description = "Default region for Resource"
-  default     = "us-east1"
+  default     = "asia-northeast3"
   type        = string
 }
 
 variable "vpc_name" {
-  default     = "gather-plan-network"
+  default     = "seoul-network"
   type        = string
 }

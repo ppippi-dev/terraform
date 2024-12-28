@@ -1,7 +1,7 @@
 resource "google_compute_subnetwork" "subnet1" {
   name          = "subnet1"
   ip_cidr_range = "10.1.0.0/16"
-  region        = "us-east1"
+  region        = "asia-northeast3"
   network       = google_compute_network.vpc_network.id
   secondary_ip_range {
     range_name    = "secondary-range"

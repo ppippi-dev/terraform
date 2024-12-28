@@ -6,18 +6,18 @@ variable "project_id" {
 
 variable "region" {
   description = "Default region for Resource"
-  default     = "us-east1"
+  default     = "asia-northeast3"
   type        = string
 }
 
 variable "zone" {
   description = "Default zone for Resource"
-  default     = ["us-east1-b"]
+  default     = ["asia-northeast3-a"]
   type        = list(string)
 }
 
 variable "vpc_name" {
-  default     = "gather-plan-network"
+  default     = "seoul-network"
   type        = string
 }
 
@@ -27,6 +27,6 @@ variable "subnet_name" {
 }
 
 variable "gke_cluster_name" {
-  default     = "gather-plan-cluster"
+  default     = "seoul-cluster"
   type        = string
 }
