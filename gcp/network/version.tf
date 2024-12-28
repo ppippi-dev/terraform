@@ -21,7 +21,7 @@ provider "google" {
 
 terraform {
   backend "gcs" {
-    bucket = "gather-plan-tfstate"
+    bucket = "seoul-tfstate"
     prefix = "terraform-network"
   }
   required_version = ">= 1.0"
