@@ -20,8 +20,8 @@ module "cluster" {
       image_type         = "COS_CONTAINERD"
       disk_type          = "pd-standard"
       disk_size_gb       = 10
-      min_count          = 0
-      max_count          = 0
+      autoscaling        = false
+      node_count         = 0
       spot               = true
       auto_repair        = true
       auto_upgrade       = true
