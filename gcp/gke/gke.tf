@@ -21,7 +21,7 @@ module "cluster" {
       disk_type          = "pd-standard"
       disk_size_gb       = 10
       min_count          = 0
-      max_count          = 1
+      max_count          = 0
       spot               = true
       auto_repair        = true
       auto_upgrade       = true
