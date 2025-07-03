@@ -19,7 +19,7 @@ module "cluster" {
       machine_type       = "e2-standard-2"
       image_type         = "COS_CONTAINERD"
       disk_type          = "pd-standard"
-      disk_size_gb       = 10
+      disk_size_gb       = 30
       autoscaling        = false
       node_count         = 0
       spot               = true
